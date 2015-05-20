@@ -1,0 +1,41 @@
+﻿<div ng-controller="vehicleListController">
+    <label>Search</label> <input type="text" ng-model="searchVehicle" />
+    <table class="table">
+        <thead>
+
+            <tr>
+
+                <th>S.Nto</th>
+
+                <th>Year</th>
+
+                <th>Make</th>
+
+                <th>Model</th>
+                <th>Release Date</th>
+                <th>Price</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr ng-repeat="vehicle in vehicles|orderBy:'-make'">
+
+                <td>{{$index}}</td>
+
+                <td>{{vehicle.year}}</td>
+
+                <td>{{vehicle.make|uppercase}}</td>
+
+                <td>{{vehicle.model}}</td>
+                <td>{{vehicle.releaseDate|date:'MM/dd/yyyy' }}</td>
+               <td>{{vehicle.price|currency:"USD$":0}}</td>
+
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+</div>
