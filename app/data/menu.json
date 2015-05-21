@@ -1,0 +1,19 @@
+{
+  "menu":[{"name":"Home",
+           "route":"home"
+          },
+    {"name":"About",
+      "route":"about"
+    },
+    {"name":"Vehicles",
+      "route":"vehicles"
+    },
+    {"name":"Login",
+      "route":"login"
+    },
+
+    {"name":"Register",
+      "route":"register"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="app/styles/bootstrap.min.css">
     <!-- Optional theme -->
-	<!--comment-->
+    <!--comment-->
     <link rel="stylesheet" href="app/styles/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="app/vendor/jquery-2.1.4.min.js"></script>
@@ -15,7 +15,13 @@
 
     <!-- refer app.js-->
     <script src="app/app.js"></script>
+
 </head>
-<body >
- </body>
+<body ng-app="vehicle.inventory">
+<div class="container">
+    <ui-view></ui-view>
+</div>
+<script src="app/factories/menuFactory.js"></script>
+<script src="app/controllers/homeController.js"></script>
+</body>
 </html>
