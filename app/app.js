@@ -40,3 +40,22 @@ app.config(['$stateProvider',
         $stateProvider.state('home.login',login);
         $stateProvider.state('home.register',register);
 }]);
+
+app.run(['$rootScope','userService','$state',function($rootScope,userService,$state){
+    $rootScope.$on('$stateChangeStart',function(event, toState, toParams, fromState, fromParams){
+      /*  var userDetails = userService.getUserDetails();
+
+        if(!userDetails.isAuthenticated){
+
+
+        }*/
+    });
+    $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
+        /*  var userDetails = userService.getUserDetails();
+
+         if(!userDetails.isAuthenticated){
+
+
+         }*/
+    });
+}]);

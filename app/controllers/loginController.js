@@ -10,7 +10,7 @@ app.controller('loginController',['$scope','loginService','$state',
                  $state.go('home');
                 }
                 else{
-                    $scope.showErrorMessage="user is not Authenticated";
+                    $scope.successMessage="user is not Authenticated";
                 }
             });
 
