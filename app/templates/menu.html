@@ -14,7 +14,7 @@
         <ul class="nav navbar-nav">
             <li class="active"
                 ng-repeat="menu in menuItems">
-                <a href="#" ng-click="loadView(menu)">{{menu.name}}</a>
+                <a href="#" ng-click="navigate(menu.route)">{{menu.name}}</a>
             </li>
         </ul>
     </div>

@@ -3,17 +3,17 @@
            "route":"home"
           },
     {"name":"About",
-      "route":"about"
+      "route":"home.about"
     },
     {"name":"Vehicles",
-      "route":"vehicles"
+      "route":"home.vehicles"
     },
     {"name":"Login",
-      "route":"login"
+      "route":"home.login"
     },
 
     {"name":"Register",
-      "route":"register"
+      "route":"home.register"
     }
   ]
 }

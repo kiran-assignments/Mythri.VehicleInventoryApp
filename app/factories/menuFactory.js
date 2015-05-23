@@ -2,7 +2,6 @@
  * Created by aalap on 21-05-2015.
  */
 app.factory('menuFactory',['$http','$q', function($http,$q){
-
     return{
        getMenuItems :function(){
            var dfd = $q.defer();

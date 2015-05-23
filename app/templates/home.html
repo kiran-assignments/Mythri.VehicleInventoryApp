@@ -14,9 +14,15 @@
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="active" ng-repeat="item in menu">
-                <a href="#">{{item.name}}</a>
+                <a href="#" ng-click="navigate(item.route)">{{item.name}}</a>
             </li>
 
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">{{user.name}}</a></li>
+        </ul>
     </div>
 </nav>
+<div class="container">
+    <ui-view></ui-view>
+</div>

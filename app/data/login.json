@@ -1,0 +1,9 @@
+{
+ "users":[
+   {"username":"kiran","password":"kiran@1234"},
+   {"username":"kalyan","password":"kalyan@1234"},
+   {"username":"anusha","password":"anusha@1234"},
+   {"username":"prasanna","password":"prasanna@1234"},
+   {"username":"praveen","password":"praveen@1234"}
+ ]
+}
